@@ -8,6 +8,16 @@ import cv2
 from PIL import Image, ImageOps
 
 
+st. set_page_config(layout="wide")
+
+
+@st.cache(allow_output_mutation=True)
+def load_model():
+    modelPath = './my_model.hdf5'
+    model=tf.keras.models.load_model(modelPath ,custom_objects={'KerasLayer':hub.KerasLayer})
+    return model
+
+
 
 def import_and_predict(image_data, model):
     size = (224,224)    
@@ -19,8 +29,7 @@ def import_and_predict(image_data, model):
     result = model.predict(test_image)
     return result
 
-modelPath = './my_model.hdf5'
-model=tf.keras.models.load_model(modelPath ,custom_objects={'KerasLayer':hub.KerasLayer})
+model = load_model()
 
 st.write("""
          # Brain Tumor Detection
