@@ -29,7 +29,6 @@ def import_and_predict(image_data, model):
     result = model.predict(test_image)
     return result
 
-model = load_model()
 
 st.write("""
          # Brain Tumor Detection
@@ -38,6 +37,7 @@ st.write("""
 file = st.file_uploader("Please upload an brain scan file", type=["jpg", "png"])
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
+model = load_model()
 
 if file is None:
     st.text("Please upload an image file")
