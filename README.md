@@ -28,7 +28,7 @@ Accuracy on:
 #### NEURAL NETWORK BUILDING
     1) Tensorflow       2) MobileNet V2     3) Tensorflow_hub
 
-#### WEBSITE DEVLOPMENT
+#### WEBSITE DEVELOPMENT
     Streamlit
 
 
@@ -109,7 +109,7 @@ SOFTWARE.
 
 The contributors to the repository are:
 
-    1) ANKIT RUPAL (@AnkitRupal)
+    1) Ankit Rupal (@AnkitRupal)
     
     2) Karan Dhar (@Karandhar007)
 
