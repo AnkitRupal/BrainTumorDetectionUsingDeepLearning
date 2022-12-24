@@ -8,15 +8,14 @@ import cv2
 from PIL import Image, ImageOps
 
 
-st. set_page_config(layout="wide")
+st. set_page_config(layout="wide", page_title="Brain Tumor Detection")
 
 
-@st.cache(allow_output_mutation=True)
+@st.cache(allow_output_mutation=True, show_spinner=False, suppress_st_warning=True)
 def load_model():
     modelPath = './my_model.hdf5'
     model=tf.keras.models.load_model(modelPath ,custom_objects={'KerasLayer':hub.KerasLayer})
     return model
-
 
 
 def import_and_predict(image_data, model):
@@ -43,7 +42,6 @@ if file is None:
     st.text("Please upload an image file")
 else:
     image = Image.open(file)
-    st.image(image, use_column_width=True)
     predictions = import_and_predict(image, model)
     score = tf.nn.softmax(predictions[0])
     str = ("{:.2f} chances of Brain Tumor".format( 100 * np.max(predictions)))
