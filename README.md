@@ -81,6 +81,8 @@ To run test dataset, run the following commands
 
 NOTE: If using linux, then you may have to use python3 testing.py for running the tests because the file needs to be runned in python v3.
 
+![App Screenshot](https://github.com/AnkitRupal/ConfigPhotos/raw/master/Testing%20Results%20BTD.png)
+
 ## License
 
 
