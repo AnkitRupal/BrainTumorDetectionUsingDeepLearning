@@ -79,6 +79,7 @@ To run test dataset, run the following commands
   python testing.py
 ```
 
+NOTE: If using linux, then you may have to use python3 testing.py for running the tests because the file needs to be runned in python v3.
 
 ## License
 
