@@ -12,7 +12,7 @@ We used the Kaggle BR35H dataset for training.
 The dataset contains 3000 images, 1500 infected and 
 1500 healthy.
 
-We used another datset from Kaggle itself having just 253 images. We used
+We used another dataset from Kaggle itself having just 253 images. We used
 this dataset for testing purposes. 
 ## Accuracy
 
@@ -65,7 +65,7 @@ Start the server
 
         2) Improved model loading time by 25%.
 
-        3) Improved Prediction Accuracy from 85% to >97.5%.
+        3) Improved Prediction Accuracy from 85% to more than 98%.
         
         4) Reduced backend load
 
